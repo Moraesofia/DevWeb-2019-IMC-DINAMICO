@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Calculo de IMC</title>
+	<link rel="shortcut icon" href="images/icon.png" type="image" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- custom css, js-->
+	<link rel="stylesheet" href="assets/custom-style.css" type="text/css">
+	<script type="text/javascript" src="assets/custom-script.js"></script>
+	<!-- Template css-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/noscript.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-heartbeat">
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>IMC</h1>
+					<p><strong>O IMC (Índice de Massa Corporal) é uma ferramenta usada para <br>detectar casos de
+							obesidade ou
+							desnutrição. Descubra o seu:</strong></p><br>
+					<h3>Informe seus dados:</h3>
+				</div>
+				<div class="form-group row" id="container">
+					<form id="pessoas">
+						<label>Sua altura (centimetros) </label>
+						<input type="number" min="0" pattern="[0-9]+([\.,][0-9]+)?" id="altura"
+							class="form-control" value="0">
+						<br>
+						<label>Seu peso (Kg) </label>
+						<input type="number" min="0" pattern="[0-9]+([\.,][0-9]+)?" step="0.01" id="peso"
+							class="form-control col-xs-2" value="0">
+						<br>
+						<button type="button" class="btn btn-outline-primary" onclick="calcular();">Calcular</button>
+						<button type="reset" class="btn btn-outline-dark" style="color: black">Limpar</button>
+					</form>
+				</div>
+				<!-- Results -->
+				<div id="final" style="display: none;">
+					<h2>Resultado <span class="icon fa-wpforms"></span></h2>
+					<div id="calc"></div>
+					<p>Mais informações <a href="https://www.minhavida.com.br/alimentacao/tudo-sobre/32159-imc"
+							target="_blank">aqui!</a></p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+
+					<!-- <li><a href="#intro">Informações sobre o site</a></li> -->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro 
+			<article id="intro">
+				<h2 class="major">Info <span class="icon fa-info-circle"></span></h2>
+				<p>Desenvolvido por Sofia Moraes para a disciplina de Desenvolvimento Web (2019-1).<br>Instituto de
+					informática - UFG</p>
+				<p><strong>Template do site -</strong> fully responsive site template designed by <a
+						href="https://html5up.net">HTML5 UP</a> and
+					released<br />
+					for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+				<p><strong>Formulario -</strong> utilizado componentes Bootstrap 4.3, disponíveis <a
+						href="https://getbootstrap.com/docs/4.3/components">aqui!</a></p>
+				<p><strong>Background -</strong> imagem de fundo por goodfon, disponível <a
+						href="https://wallhere.com/en/user/14290">aqui!</a></p>
+			</article>
+			-->
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Sofia Moraes 2019 <a href="https://github.com/Moraesofia/DevWeb-2019-IMC"
+					class="icon fa-github"><span class="label" target="_blank">Github</span></a></li>. Design: <a
+					href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+</body>
+
+</html>
